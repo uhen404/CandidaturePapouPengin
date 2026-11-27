@@ -106,7 +106,7 @@ section{padding:100px 0}
 @media(max-width:800px){.app{grid-template-columns:1fr}}
 .frame{aspect-ratio:3/4;border:1px solid var(--gold);border-radius:6px;padding:12px;position:relative;background:linear-gradient(160deg,#101a30,#080c17);box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
 .frame>div{height:100%;border:1px dashed rgba(124,192,255,.35);display:grid;place-items:center;text-align:center;color:var(--mut);font-style:italic;font-size:.9rem;background:radial-gradient(circle at 50% 35%,rgba(124,192,255,.16),transparent 60%)}
-.frame svg{width:110px;opacity:.55;display:block;margin:0 auto 14px}
+.frame .art{padding:0;border:0;background:none;overflow:hidden;border-radius:3px}.frame .art svg{width:100%;height:100%;display:block}
 .app p{margin-bottom:20px;color:#c9d0de}
 .app p b{font-family:var(--serif);color:var(--gold);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:4px;font-weight:500}
 /* HRP */
@@ -250,7 +250,85 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-si
 <section class="alt" id="apparence"><div class="wrap">
 <div class="head rv"><small>VI</small><h2><span class="gold">Apparence</span></h2><div class="rule"></div></div>
 <div class="app rv">
-<div class="frame"><div><span><svg viewBox="0 0 100 120" fill="none" stroke="#7cc0ff" stroke-width="2"><circle cx="50" cy="34" r="20"/><path d="M12 112c0-30 16-46 38-46s38 16 38 46"/></svg>Illustration à venir</span></div></div>
+<div class="frame"><div class="art"><svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration de Papou Pengin : cheveux azur, regard perçant, maillot sombre à éclair doré">
+<defs>
+<linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14264a"/><stop offset="1" stop-color="#060912"/></linearGradient>
+<radialGradient id="pglow" cx=".5" cy=".38" r=".55"><stop offset="0" stop-color="#7cc0ff" stop-opacity=".55"/><stop offset="1" stop-color="#7cc0ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="phair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd6ff"/><stop offset=".5" stop-color="#5aa3e6"/><stop offset="1" stop-color="#2f66b5"/></linearGradient>
+<linearGradient id="phair2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fc1fb"/><stop offset="1" stop-color="#2a5ca8"/></linearGradient>
+<linearGradient id="pskin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8bf96"/><stop offset="1" stop-color="#c99a70"/></linearGradient>
+<linearGradient id="piris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f6ff"/><stop offset=".45" stop-color="#58b0ff"/><stop offset="1" stop-color="#1f4fa8"/></linearGradient>
+<linearGradient id="pgold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6e3a8"/><stop offset="1" stop-color="#b08a30"/></linearGradient>
+<clipPath id="pc"><rect width="600" height="800"/></clipPath>
+</defs>
+<g clip-path="url(#pc)">
+<rect width="600" height="800" fill="url(#pbg)"/>
+<rect width="600" height="800" fill="url(#pglow)"/>
+<!-- aura rings + speed lines -->
+<g fill="none" stroke="#7cc0ff" stroke-opacity=".28"><circle cx="300" cy="300" r="200"/><circle cx="300" cy="300" r="260" stroke-dasharray="4 10"/></g>
+<g stroke="#b5dcff" stroke-opacity=".25" stroke-width="2"><path d="M20 120 190 150M10 200 160 210M430 90 590 60M450 190 600 170M20 520 150 500M470 540 590 520"/></g>
+<!-- lightning -->
+<path d="M70 60 20 200h42l-18 110 80-150H92z" fill="url(#pgold)" opacity=".85"/>
+<path d="M520 40 470 170h40l-14 100 76-140h-46z" fill="#9fd1ff" opacity=".8"/>
+<path d="M540 420 508 500h26l-10 60 50-84h-30z" fill="url(#pgold)" opacity=".6"/>
+<!-- back hair -->
+<path d="M178 250C150 110 450 110 422 250 448 410 462 560 430 720L172 720C140 560 152 410 178 250Z" fill="url(#phair2)"/>
+<path d="M190 300C180 420 176 560 196 700M410 300C420 420 424 560 404 700" stroke="#2a5ca8" stroke-width="3" fill="none" opacity=".6"/>
+<!-- neck -->
+<path d="M268 392H332V478C318 492 282 492 268 478Z" fill="#b98a62"/>
+<!-- jersey -->
+<path d="M0 800C8 620 80 530 214 490 250 482 275 480 300 484 325 480 350 482 386 490 520 530 592 620 600 800Z" fill="#0c1326"/>
+<path d="M0 800C8 620 80 530 214 490 250 482 275 480 300 484" stroke="url(#pgold)" stroke-width="5" fill="none"/>
+<path d="M600 800C592 620 520 530 386 490 350 482 325 480 300 484" stroke="url(#pgold)" stroke-width="5" fill="none"/>
+<path d="M248 482 300 560 352 482" fill="#16213d" stroke="url(#pgold)" stroke-width="5" stroke-linejoin="round"/>
+<path d="M286 590h28v210h-28z" fill="#1b2c52" opacity=".0"/>
+<path d="M100 720c60-60 120-90 180-100M500 720c-60-60-120-90-180-100" stroke="#7cc0ff" stroke-opacity=".35" stroke-width="3" fill="none"/>
+<!-- chest emblem (générique) -->
+<g transform="translate(300 650)"><circle r="46" fill="#0a1020" stroke="url(#pgold)" stroke-width="4"/><path d="M8-34-22 4h18L-8 34 24-8H6z" fill="url(#pgold)"/></g>
+<!-- shoulder stripes -->
+<path d="M60 660c20-70 70-120 150-150l8 14c-70 28-112 70-130 140z" fill="#7cc0ff" opacity=".7"/>
+<path d="M540 660c-20-70-70-120-150-150l-8 14c70 28 112 70 130 140z" fill="#7cc0ff" opacity=".7"/>
+<!-- face -->
+<path d="M212 250C210 340 244 418 300 432 356 418 390 340 388 250 386 180 214 180 212 250Z" fill="url(#pskin)"/>
+<path d="M212 300C216 360 244 410 276 426 244 396 226 350 224 300Z" fill="#a97a54" opacity=".35"/>
+<!-- ears -->
+<path d="M212 292c-18-4-22 24-4 34 4 2 8 0 10-6z" fill="#cf9e75"/><path d="M388 292c18-4 22 24 4 34-4 2-8 0-10-6z" fill="#cf9e75"/>
+<!-- eyebrows : arrogant, angled -->
+<path d="M236 268 L284 284" stroke="#27518f" stroke-width="7" stroke-linecap="round"/>
+<path d="M364 268 L316 284" stroke="#27518f" stroke-width="7" stroke-linecap="round"/>
+<!-- eyes -->
+<g>
+<path d="M232 302C250 290 278 290 290 306 278 322 250 324 232 302Z" fill="#fff"/>
+<ellipse cx="266" cy="306" rx="15" ry="16" fill="url(#piris)"/><ellipse cx="266" cy="307" rx="6.5" ry="8" fill="#0a1226"/><circle cx="260" cy="300" r="4.2" fill="#fff"/><circle cx="272" cy="313" r="2" fill="#fff" opacity=".8"/>
+<path d="M228 304C248 286 280 286 294 306" stroke="#0f1a36" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M226 300l-8-8" stroke="#0f1a36" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g>
+<path d="M368 302C350 290 322 290 310 306 322 322 350 324 368 302Z" fill="#fff"/>
+<ellipse cx="334" cy="306" rx="15" ry="16" fill="url(#piris)"/><ellipse cx="334" cy="307" rx="6.5" ry="8" fill="#0a1226"/><circle cx="328" cy="300" r="4.2" fill="#fff"/><circle cx="340" cy="313" r="2" fill="#fff" opacity=".8"/>
+<path d="M372 304C352 286 320 286 306 306" stroke="#0f1a36" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M374 300l8-8" stroke="#0f1a36" stroke-width="3" stroke-linecap="round"/>
+</g>
+<!-- nose / mouth -->
+<path d="M300 322v26l-7 4" stroke="#a97a54" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M276 388c14 6 34 4 50-6" stroke="#7a4a36" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M326 382l8-4" stroke="#7a4a36" stroke-width="3" stroke-linecap="round"/>
+<!-- bangs -->
+<path d="M196 276C200 170 260 140 304 150 360 146 404 176 406 276 396 232 372 206 346 204 336 230 318 246 300 256 282 246 264 230 254 204 228 206 206 236 196 276Z" fill="url(#phair)"/>
+<path d="M254 204C262 236 280 252 300 262 294 236 284 214 254 204Z" fill="#9fd6ff"/>
+<path d="M346 204C338 236 320 252 300 262 306 236 316 214 346 204Z" fill="#8cc9fb"/>
+<path d="M300 150C288 190 290 226 300 262 310 226 312 190 300 150Z" fill="#b8e2ff" opacity=".85"/>
+<path d="M228 190c-8 30-14 60-14 90M372 190c8 30 14 60 14 90" stroke="#e1f3ff" stroke-width="3" fill="none" opacity=".7" stroke-linecap="round"/>
+<path d="M240 168C266 150 300 146 330 152" stroke="#e1f3ff" stroke-width="5" fill="none" opacity=".6" stroke-linecap="round"/>
+<!-- front long locks over shoulders -->
+<path d="M206 300C186 380 176 470 168 560 176 600 190 640 198 700 214 640 220 520 232 430 222 380 214 340 206 300Z" fill="url(#phair)"/>
+<path d="M394 300C414 380 424 470 432 560 424 600 410 640 402 700 386 640 380 520 368 430 378 380 386 340 394 300Z" fill="url(#phair)"/>
+<path d="M200 330C190 420 184 500 180 590M400 330C410 420 416 500 420 590" stroke="#d6efff" stroke-width="3" fill="none" opacity=".6" stroke-linecap="round"/>
+<!-- sparks -->
+<g fill="#f6e3a8"><circle cx="120" cy="330" r="3"/><circle cx="480" cy="300" r="3"/><circle cx="90" cy="450" r="2"/><circle cx="510" cy="460" r="2.5"/><circle cx="150" cy="130" r="2"/><circle cx="450" cy="120" r="2"/></g>
+</g>
+</svg>
+</div></div>
 <div>
 <p><b>Cheveux et visage</b>Cheveux mi-longs à longs, d'un bleu clair tirant sur l'azur brumeux, qui retombent sur les épaules (plus longs à l'arrière, parfois jusqu'à la taille selon les périodes). Teint mat, regard perçant qui semble toujours évaluer son interlocuteur.</p>
 <p><b>Silhouette et tenue</b>Carrure athlétique de joueur de terrain. Allure sérieuse, un peu arrogante et tranchante. Sur le terrain, il porte le maillot et le short de son équipe. En dehors, il privilégie une tenue civile sombre, sobre et élégante. Ses tenues sont sombres ou contrastées selon son équipe.</p>
